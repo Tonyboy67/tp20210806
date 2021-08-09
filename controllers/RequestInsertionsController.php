@@ -85,7 +85,7 @@ function execute(){
             if (!is_null($info)) {
                 //Un enregistrement trouvé, et surement, le seul
                 //Affichage du contenu...
-                $information='<div><textarea>'.$info->data.'</textarea></div>';
+                $information='<div><textarea readonly>'.$info->data.'</textarea></div>';
                 include __DIR__.'/../templates/resultatsRecherche.html.php';
 
             } else {
@@ -104,7 +104,7 @@ function execute(){
                     //Dans ce cas on concatène l'ensemble des textes représentant 
                     //les informations saisies, qu'on présente à la suite chacun dans
                     // une "textarea" elle-même incluse dans une "div".   
-                    $information.='<div class="topsecret"><textarea>'.$inf->data.'</textarea></div>';
+                    $information.='<div class="topsecret"><textarea readonly>'.$inf->data.'</textarea></div>';
                 }
             }
             //Et c'est ici qu'on réceptionne et afiche les résultats

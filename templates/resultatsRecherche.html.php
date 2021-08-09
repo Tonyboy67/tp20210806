@@ -36,6 +36,7 @@
          padding: 10px; 
         border: solid 2px;
         font-size: 1em;
+        resize: none;
     }
 
 </style>
