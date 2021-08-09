@@ -9,9 +9,9 @@
 <body>
     <h1>Voici le(s) enregistrement(s) ramené(s) avec les informations de recherche ci-dessous</h1>
     <div>
-        email : "<?php echo $email;  ?>" - cle n° 1 : "<?php echo $cle1; ?>" - clé n° 2 : "<?php echo $cle2 ;?>"  - 
+        email : "<?php echo $email;  ?>" - cle n° 1 : "<?php echo $cle1; ?>" - clé n° 2 : "<?php echo $cle2 ;?>" 
         <?php if (isset($_POST["clegeneree"]) && strlen(trim($_POST["clegeneree"]))>=6){
-            echo "clé générée : ".$clegeneree; 
+            echo " - clé générée : ".$clegeneree; 
         }
         
         ?> 
