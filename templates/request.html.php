@@ -28,7 +28,7 @@
            </div>
 
             <div  >
-                <input class="clegeneree" type="password" placeholder="Clé générée pour un enregistrement" name = "clegeneree" >
+                <input class="clegeneree" type="password" placeholder="Clé générée lors d'un enregistrement" name = "clegeneree" >
             </div>
              <button type="submit">Lancer la recherche</button>
             <button type="reset">Réinitialiser</button>
@@ -54,6 +54,9 @@
 
         ul{
             font-size: 1.3em;
+        }
+        .clegeneree{
+            width: 500px;
         }
     </style>
 </html>
