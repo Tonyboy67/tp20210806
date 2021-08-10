@@ -53,7 +53,7 @@
                 <label>Veuillez inserrer ci-dessous votre texte à protéger</label><br />
                 <textarea placeholder="Vos données secrètes" name = "data" ></textarea>
             </div>
-             <button type="submit">Insérer en base</button>
+            <button type="submit">Insérer en base</button>
             <button type="reset">Réinitialiser</button>
         </form>
 
@@ -75,9 +75,9 @@
         }
 
 
-        div, p, li, input{
+        /*div, p, li, input, button{
         font-size: 1.2em;
-    }
+    }*/
     .topsecret{
         margin-bottom: 10px;
         width: 60%;
@@ -91,6 +91,16 @@
         border: solid 2px;
         font-size: 1em;
         resize: none;
+    }
+    div, ul,  button{
+        font-size: 1.3em;
+        font-weight: bolder;
+        margin-bottom: 5px;
+    }
+    p, input, label {
+        font-size: 1.1em;
+        font-weight: bolder;
+        margin-bottom: 5px;
     }
 
     </style>

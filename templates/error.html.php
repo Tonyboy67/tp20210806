@@ -14,7 +14,7 @@
     </p>
 </body>
     <style>
-        p, li{
+        p, li, button{
             font-size: 1.3em;
         }
     </style>

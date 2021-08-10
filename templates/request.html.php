@@ -44,17 +44,16 @@
             margin: 3px;
             width: 350px;
         }
-        p{
+        /*p{
             font-size: 1.3em;
-        }
+        }*/
+        div, p, ul, li, input, button{
+        font-size: 1.3em;
+        font-weight: bolder;
+        margin-bottom: 5px;
+    }
 
-        div input{
-            font-size: 1.3em;
-        }
 
-        ul{
-            font-size: 1.3em;
-        }
         .clegeneree{
             width: 500px;
         }
