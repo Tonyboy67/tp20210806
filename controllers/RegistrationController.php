@@ -89,7 +89,7 @@ function save (){
             $info->email=$email;
             $info->cle1=$cle1;
             $info->cle2=$cle2;
-            $info->clegeneree=substr(str_shuffle('&{[(-|_\@)])}0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'),1,$randsize);
+            $info->clegeneree=substr(str_shuffle('&{[(-|_\@)])}$!§;.,?<>#&~£%*0123456789abcdefghijklmnopqrstuvxywzABCDEFGHIJKLMNOPQRSTUVWXYZ'),1,$randsize);
             if(isset($_POST["data"]))
                 $info->data=$_POST["data"];
             else $info->data="";

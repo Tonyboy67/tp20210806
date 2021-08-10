@@ -25,29 +25,16 @@ else if($path === '/request/execute'){
     include __DIR__.'/controllers/RequestInsertionsController.php';
     execute();
 }
+else if($path === '/update'){
+    //Accès aux données (page de requête)
+    //include __DIR__.'/templates/request.html.php';
+    include __DIR__.'/controllers/RequestInsertionsController.php';
+    update();
+}
 else{
     include __DIR__.'./controllers/NotFoundController.php';
     index();
 }
-
-
-/*
-else if($path=="/register"){
-    include __DIR__.'/../src/Controller/RegistrationController.php';
-    index();
-}
-else if($path=="/register/save"){
-    include __DIR__.'/../src/Controller/';
-    save();
-}
-else if($path=="/login"){
-    include __DIR__.'/../src/Controller/SecurityController.php';
-    index();
-}
-
-*/
-
-
 
 /*
 /*else if($path==""){

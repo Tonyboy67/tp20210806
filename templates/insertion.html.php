@@ -15,7 +15,7 @@
                     <li>L'e-mail doit être un email valide</li>
                     <ii>Les mots de passe 1 et 2 (au moins 8 caractères)</li>
                     <li>Les données saisies le sont définitivement. Vous ne pourrez plus les modifier</li>
-                    <li>Un troisième mot de passe vous sera transmis pour les connexions ultérieures, pour l'accès à la donnée inserée. Si vous le perdez, vous n'accèderez jamais plus à l'information textuelle associée.
+                    <li>Un troisième mot de passe vous sera transmis pour les requêtes ultérieures, pour l'accès à la donnée inserée. Si vous le perdez, vous n'accèderez jamais plus à l'information textuelle associée.
                     </li>
                 </ui>
 
@@ -73,6 +73,25 @@
             padding: 10px; 
             border: solid 2px;
         }
+
+
+        div, p, li, input{
+        font-size: 1.2em;
+    }
+    .topsecret{
+        margin-bottom: 10px;
+        width: 60%;
+    }
+ 
+    div textarea {
+        border: solid 2px;
+        width: 75%;
+        height: 175px;
+         padding: 10px; 
+        border: solid 2px;
+        font-size: 1em;
+        resize: none;
+    }
 
     </style>
 </html>

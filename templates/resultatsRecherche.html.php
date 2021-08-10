@@ -7,6 +7,7 @@
     <title>Résultats trouvés</title>
 </head>
 <body>
+    <?php include __DIR__.'./navbar.html.php'; ?>
     <h1>Voici le(s) enregistrement(s) ramené(s) avec les informations de recherche ci-dessous</h1>
     <div>
         email : "<?php echo $email;  ?>" - cle n° 1 : "<?php echo $cle1; ?>" - clé n° 2 : "<?php echo $cle2 ;?>" 
@@ -22,7 +23,7 @@
 </body>
 <style>
     div{
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     .topsecret{
         margin-bottom: 10px;
@@ -31,8 +32,8 @@
  
     div textarea {
         border: solid 2px;
-        width: 55%;
-        height: 150px;
+        width: 75%;
+        height: 175px;
          padding: 10px; 
         border: solid 2px;
         font-size: 1em;

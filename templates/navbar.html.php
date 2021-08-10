@@ -9,10 +9,13 @@
 </nav>
 <style>
     a{
-        margin-right: 10px;
+        margin-right: 10px; 
+        font-size: 1.3em;
+        font-weight: bolder;
     }
 
     nav{
         margin-bottom: 10px;
+       
     }
 </style>

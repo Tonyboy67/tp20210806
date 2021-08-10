@@ -75,18 +75,18 @@ function execute(){
                 if ($inf->email===$email && $inf->cle1=== $cle1 && $inf->cle2===$cle2 && $inf->clegeneree=== $clegeneree) {
                     //On initialise $information et on l'affiche
                     $info=$inf;
-                    //On peut sortir sans trop de souci, car la
-                    //clé générée de façon alé atoire a de fortes
-                    //chances d'être unique
+                    //On peut sortir car la clé générée de façon aléatoire
+                    //a de fortes chances d'être unique
                     break;
                 }
             }
             //Enregistrement trouvé
             if (!is_null($info)) {
                 //Un enregistrement trouvé, et surement, le seul
-                //Affichage du contenu...
-                $information='<div><textarea readonly>'.$info->data.'</textarea></div>';
-                include __DIR__.'/../templates/resultatsRecherche.html.php';
+                //Affichage du contenu qui peut être modifié dans le cas d'une recherche
+                //en introduisant la clé générée 
+                //$information='<div><textarea>'.$info->data.'</textarea></div>';
+                include __DIR__.'/../templates/resultatsRechercheUnique.html.php';
 
             } else {
                 //Page indiquant que l'enregistrement n'a pas été trouvé
@@ -103,7 +103,7 @@ function execute(){
 
                     //Dans ce cas on concatène l'ensemble des textes représentant 
                     //les informations saisies, qu'on présente à la suite chacun dans
-                    // une "textarea" elle-même incluse dans une "div".   
+                    // une "textarea" en LECTURE SEULE (readonly) elle-même incluse dans une "div".   
                     $information.='<div class="topsecret"><textarea readonly>'.$inf->data.'</textarea></div>';
                 }
             }
@@ -112,4 +112,19 @@ function execute(){
             include __DIR__.'/../templates/resultatsRecherche.html.php';
         }
     }
+}
+
+
+function update(){
+    $id=$_POST["id"];
+    $data=$_POST["data"];
+    include __DIR__.'/../entities/Information.php';
+
+
+
+        $info=Information::retrieveByPK($id);
+        $info->data=$data;
+        $info->update();
+        include __DIR__.'/../templates/resultatsRechercheUnique.html.php';
+
 }

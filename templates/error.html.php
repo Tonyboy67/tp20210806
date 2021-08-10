@@ -14,7 +14,7 @@
     </p>
 </body>
     <style>
-        p{
+        p, li{
             font-size: 1.3em;
         }
     </style>
