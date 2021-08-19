@@ -27,25 +27,16 @@
         <form action="/register/save" method="POST">
             <div>
                 <input type="text" placeholder="Votre adresse mail" name = "user-email" required>
-            <!--</div>
-
-            <div>-->
-                <input type="text" placeholder="Confirmez votre mail" name = "user-email-confirm" required>
+                  <input type="text" placeholder="Confirmez votre mail" name = "user-email-confirm" required>
             </div>
 
             <div>
                 <input type="password" placeholder="Première clé" name = "cle-1" required>
-            <!--</div>
-
-            <div>-->
                 <input type="password" placeholder="Confirmez la 1ère clé" name = "cle1-confirm" required>
             </div>
 
             <div>
                 <input type="password" placeholder="Seconde clé" name = "cle-2" required>
-            <!--</div>
-
-            <div>-->
                 <input type="password" placeholder="Confirmez la seconde clé" name = "cle2-confirm" required>
             </div>
 
@@ -62,7 +53,7 @@
 
         form div input{
             margin: 3px;
-            width: 250px;
+            width: 300px;
         }
      
         form div textarea {
@@ -78,22 +69,20 @@
         /*div, p, li, input, button{
         font-size: 1.2em;
     }*/
-    .topsecret{
-        margin-bottom: 10px;
-        width: 60%;
-    }
+
  
     div textarea {
         border: solid 2px;
         width: 75%;
         height: 175px;
-         padding: 10px; 
+        padding: 10px; 
         border: solid 2px;
-        font-size: 1em;
+        font-size: 1.3em;
+        font-weight: normal;
         resize: none;
     }
     div, ul,  button{
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-weight: bolder;
         margin-bottom: 5px;
     }
